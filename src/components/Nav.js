@@ -2,7 +2,7 @@ import Title from "./Title";
 import resources from "../resources.json";
 import Resources from "./Resources";
 
-export default function Nav({ cat }) {
+export default function Nav() {
   return (
     <nav>
       <Title />
