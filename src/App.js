@@ -1,10 +1,11 @@
 import './App.css';
+import Header from './components/Header';
 import './css/main.css'
 
 function App() {
   return (
     <div className="App">
-      <h3>Git Gud</h3>
+      <Header/>
     </div>
   );
 }
