@@ -1,7 +1,13 @@
-import Title from "./Title";
+import Category from "./Category";
+import Sources from "./Sources";
+import Text from "./Text";
 
-export default function Resources({cat}) {
+export default function Resources({cat, text, src}) {
   return (
-  <Title cat={cat} />
+    <article>
+  <Category cat={cat}/>
+  <Text text={text}/>
+  <Sources src={src} />
+  </article>
   )
 }
