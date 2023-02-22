@@ -1,13 +1,7 @@
-import resources from '../resources.json'
-
-export default funciton Content () {
+export default function Content({title}){
     return (
-        <main>
-            <article>
-             <h2>
-             
-             </h2>
-            </article>
-        </main>
-    )
+    <div>
+    <h1>{title}</h1>
+  </div>
+);
 }
