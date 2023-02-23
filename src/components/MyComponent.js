@@ -13,6 +13,7 @@ export default function MyComponent() {
           </button>
           {selectedCategory === item.category && (
             <div>
+              <h2>{item.category}</h2>
               <p>{item.text}</p>
               <ul>
                 {item.sources.map((source, index) => (
