@@ -1,19 +1,23 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MyComponent from "./components/MyComponent";
-import Content from "./components/Content";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import filer from './resources/filer';
+import Resouces from './components/Resouces';
+
 export default function App() {
   return (
-    <BrowserRouter>
-    <main>
-    <MyComponent />
+    <Router>
+      <nav>
+        {filer.map((item, index) => (
+          <Link key={index} to={item.category}>
+            {item.category}
+          </Link>
+        ))}
+      </nav>
       <Routes>
-          <Route path="/html" element={<Content title="HTML" />} />
-          <Route path="/css" element={<Content title="CSS" />} />
-          <Route path="/javascript" element={<Content title="Javascript" />} />
-          <Route path="/reactpage" element={<Content title="React" />} />
-          <Route path="/sanity" element={<Content title="Sanity" />} />
+        {filer.map((item, index) => (
+          <Route key={index} path={item.category} element={<Resouces category={item.category} />} />
+        ))}
       </Routes>
-      </main>
-    </BrowserRouter>
+    </Router>
   );
 }
