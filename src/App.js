@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 import filer from './resources/filer';
 import Resouces from './components/Resouces';
 import Header from './components/Header';
@@ -11,9 +11,9 @@ export default function App() {
       <Header />
       <nav className='nav'>
         {filer.map((item, index) => (
-          <Link key={index} to={item.category}>
+          <NavLink key={index} to={item.category} activeclassname="active">
             {item.category}
-          </Link>
+          </NavLink>
         ))}
       </nav>
       <article className='article'>
