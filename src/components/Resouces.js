@@ -1,6 +1,6 @@
-import filer from '../resources/filer';
+import filer from '../Resources/filer';
 
-export default function MyComponent({ category }) {
+export default function ResourcesComponent({ category }) {
   const item = filer.find((item) => item.category === category);
 
   return (
