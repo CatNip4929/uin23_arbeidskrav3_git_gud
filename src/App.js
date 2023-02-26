@@ -1,17 +1,8 @@
-import './App.css';
-import Content from './components/Content';
-import Header from './components/Header';
-import Nav from './components/Nav';
-import './css/main.css'
+import filer from './resources/filer';
+import Resouces from './components/Resouces';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <Header/>
-      <Nav/>
-      <Content/>
-    </div>
-  );
+    
+  )
 }
-
-export default App;
