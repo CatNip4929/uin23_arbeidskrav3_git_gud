@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import filer from "./resources/filer";
+import filer from "./Resources/filer";
 import Resouces from "./components/Resouces";
 
 export default function App() {

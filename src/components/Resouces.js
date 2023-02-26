@@ -1,4 +1,4 @@
-import filer from "../resources/filer";
+import filer from "../Resources/filer";
 
 export default function ResoucesComponent({ category }) {
   const item = filer.find((item) => item.category === category);
