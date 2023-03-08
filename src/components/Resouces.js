@@ -17,3 +17,7 @@ export default function ResourcesComponent({ category }) {
     </div>
   );
 }
+
+//Const item brukes til å kjøre funksjonen find som søker igjennom filer. Her skal den finne objektet som har matchene category verdi
+//Så rendres det ut de ulike Resourcesene fra filer.js, der maping blir kjørt i sources for å få ut begge verdiene
+//https://medium.com/@ariefbadal21/learn-reactjs-with-me-array-find-dbbdeafe4633
